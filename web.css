@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoda Naseri - Academic Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .email, .github, .linkedin {
+            text-decoration: none;
+            color: #34495e;
+        }
+
+        .email:hover, .github:hover, .linkedin:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoda Naseri</h1>
+        <p>Ph.D. Candidate | Statistician | Data Scientist | Machine Learning Researcher</p>
+    </header>
+
+    <nav>
+        <a href="#bio">Bio</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="bio">
+        <h2>Bio</h2>
+        <p>I am Hoda Naseri, a data scientist with extensive experience in machine learning, biostatistics, and health data science. I am currently pursuing advanced research in AI-driven medical diagnostics, with a focus on melanoma detection and FAIR data management systems.</p>
+        <p>My academic background includes a Master’s degree in Data Science and a Bachelor’s degree in Statistics from top-ranked universities in Iran.</p>
+    </section>
+
+    <section id="research">
+        <h2>Research Experience</h2>
+        <ul>
+            <li>
+                <strong>Master’s Thesis:</strong> Melanoma Diagnosis and Malignancy Grading from Multimodal Data Using Deep Learning
+                <ul>
+                    <li>Developed CNN-based models for dermoscopy and pathology data integration.</li>
+                    <li>Collaborated with Razi Hospital to obtain and process datasets.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Biobank Project:</strong> National Brain Mapping Laboratory
+                <ul>
+                    <li>Contributed to building an open data platform for neuroimaging datasets.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>
+                <strong>Diagnosis and Prognosis of Melanoma from Dermoscopy Images Using Machine Learning and Deep Learning:</strong> A Systematic Literature Review  
+                <br>Accepted in BMC Cancer Journal (to be published in 2025).
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via:</p>
+        <ul>
+            <li>Email: <a href="mailto:hodaanaserii@gmail.com" class="email">hodaanaserii@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/hodanaseri" class="github" target="_blank">hodanaseri</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/hodanaseri" class="linkedin" target="_blank">hodanaseri</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hoda Naseri. All rights reserved.</p>
+    </footer>
+</body>
+</html>
