@@ -92,13 +92,13 @@
     <section id="bio">
         <h2>Bio</h2>
         <p>Welcome to my website!</p>
-        <p>I'm Hoda Naseri, a data scientist with extensive experience in machine learning, biostatistics, and health data science. Currently, I'm pursuing advanced research in AI-driven medical diagnostics, focusing on melanoma detection and data management systems. My academic background includes a Master’s degree in Data Science and a Bachelor’s degree in Statistics.</p>
+        <p>I'm Hoda Naseri, a data scientist with extensive experience in machine learning, applied statistics, and health data science. Currently, I'm pursuing advanced research in AI-driven medical diagnostics, focusing on melanoma detection and data management systems. My academic background includes a Master’s degree in Data Science and a Bachelor’s degree in Statistics.</p>
         <p>In addition to my academic pursuits, I'm an author passionate about bringing the lives of influential scientists to middle school students through engaging biographical novels. My goal is to inspire young minds by showcasing the stories of remarkable individuals who have shaped the world of science.</p>
         <p>When I'm not working on research or writing, I enjoy reading, practicing yoga, exploring new ideas that fuel my creativity, and visiting historical and cultural sites to immerse myself in their stories and significance.</p>
     </section>
 
     <section id="research">
-        <h2>Research Experience</h2>
+        <h2>Research Experiences</h2>
         <ul>
             <li>
                 <strong>Master’s Thesis:</strong> Melanoma Diagnosis and Malignancy Grading from Multimodal Data Using Deep Learning
@@ -111,6 +111,16 @@
                 <strong>Biobank Project:</strong> National Brain Mapping Laboratory
                 <ul>
                     <li>Contributed to building an open data platform for neuroimaging datasets.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Research Interest</h2>
+        <ul>
+            <li>
+                    <li>Statistical Machine Learning</li> <li>Applied Statistics</li> <li>Time Series</li> <li>Data Mining</li> <li>Biomedical Data Analysis</li> <li>Medical Imaging</li>
+                </ul>
+            </li>
+            <li>
                 </ul>
             </li>
         </ul>
