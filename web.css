@@ -15,12 +15,17 @@
             color: #333;
         }
 
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
+         header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+       }
+
+        header h1 {
+    color: white;
         }
+
 
         nav {
             display: flex;
