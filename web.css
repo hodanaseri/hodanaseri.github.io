@@ -79,25 +79,6 @@
         .email:hover, .github:hover, .linkedin:hover {
             text-decoration: underline;
         }
-        /* Photography Section Styles */
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .photo-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .photo-grid img:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
@@ -157,27 +138,6 @@
         </li>
     </ul>
 </section>
-
- <section id="photography">
-        <h2>Photography</h2>
-        <p>Here are some of my favorite photographs:</p>
-        <div class="photo-grid">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645276.jpg" alt="Zoroastrian Fire Temple of Yazd, Yazd">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645252.jpg" alt="Sa'dabad Cultural and Historical Complex, Tehran">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645213.jpg" alt="Sa'dabad Cultural and Historical Complex, Tehran">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645192.jpg" alt="Kharbas Cave, Qeshm">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645170.jpg" alt="Stars Valley, Qeshm">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645142.jpg" alt="Chahkooh Canyon, Qeshm">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645102.jpg" alt="The Valley of the Statues, Hormoz">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645074.jpg" alt="Red Beach, Hormoz">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645048.jpg" alt="Turtles Beach, Hormoz">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297644940.jpg" alt="Carpet Museum of Iran, Tehran">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645001.jpg" alt="Carpet Museum of Iran, Tehran">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645023.jpg" alt="Carpet Museum of Iran, Tehran">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297644954.jpg" alt="National Museum of Iran, Tehran">
-            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297644970.jpg" alt="National Museum of Iran, Tehran">
-        </div>
-    </section>
 
 <section id="contact">
     <h2>Contact</h2>
