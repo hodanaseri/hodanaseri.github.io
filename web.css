@@ -1,174 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoda Naseri</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoda Naseri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-        header {
-    background: #2c3e50;
-    padding: 2rem 0;
-    text-align: center;
-        }
+        header {
+    background: #2c3e50;
+    padding: 2rem 0;
+    text-align: center;
+        }
 
-        header h1 {
-    color: white !important;
-    font-size: 2.5rem;
-    font-weight: bold;
-        }
+        header h1 {
+    color: white !important;
+    font-size: 2.5rem;
+    font-weight: bold;
+        }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #34495e;
-            padding: 0.5rem;
-        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+            padding: 0.5rem;
+        }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
 
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
 
-        ul {
-            padding-left: 1.5rem;
-        }
+        ul {
+            padding-left: 1.5rem;
+        }
 
-        li {
-            margin-bottom: 0.5rem;
-        }
+        li {
+            margin-bottom: 0.5rem;
+        }
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #2c3e50;
-            color: white;
-            margin-top: 2rem;
-        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
 
-        .email, .github, .linkedin {
-            text-decoration: none;
-            color: #34495e;
-        }
+        .email, .github, .linkedin {
+            text-decoration: none;
+            color: #34495e;
+        }
 
-        .email:hover, .github:hover, .linkedin:hover {
-            text-decoration: underline;
-        }
-    </style>
+        .email:hover, .github:hover, .linkedin:hover {
+            text-decoration: underline;
+        }
+        /* Photography Section Styles */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Hoda Naseri</h1>
-    </header>
+    <header>
+        <h1>Hoda Naseri</h1>
+    </header>
 
-    <nav>
-        <a href="#bio">Bio</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-        <a href="#photography">Photography</a>
-    </nav>
+    <nav>
+        <a href="#bio">Bio</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+        <a href="#photography">Photography</a>
+    </nav>
 
-    <section id="bio">
-        <h2>Bio</h2>
-        <p>I am a data scientist with a strong background in machine learning, applied statistics, and health data science. Currently, I am pursuing my Master’s in Data Science,  after earning a Bachelor’s in Statistics. My research focuses on AI-driven medical diagnostics, with a particular emphasis on melanoma detection.</p>
-        <p>Beyond my academic and professional work, I am also an author passionate about making science accessible to young minds. Through engaging biographical novels, I bring the stories of influential scientists to middle school students, inspiring the next generation with the achievements of those who have shaped the world of science.</p>
-        <p>Outside of research and writing, I enjoy reading, practicing yoga, and exploring new ideas that fuel my creativity. I also love visiting historical and cultural sites, immersing myself in their stories and significance.</p>
-    </section>
+    <section id="bio">
+        <h2>Bio</h2>
+        <p>I am a data scientist with a strong background in machine learning, applied statistics, and health data science. Currently, I am pursuing my Master’s in Data Science,  after earning a Bachelor’s in Statistics. My research focuses on AI-driven medical diagnostics, with a particular emphasis on melanoma detection.</p>
+        <p>Beyond my academic and professional work, I am also an author passionate about making science accessible to young minds. Through engaging biographical novels, I bring the stories of influential scientists to middle school students, inspiring the next generation with the achievements of those who have shaped the world of science.</p>
+        <p>Outside of research and writing, I enjoy reading, practicing yoga, and exploring new ideas that fuel my creativity. I also love visiting historical and cultural sites, immersing myself in their stories and significance.</p>
+    </section>
 
-    <section id="research">
-        <h2>Research Interests</h2>
-        <Li>Statistical Machine Learning <Li>Applied Statistics <Li>Time Series <Li>Data Mining <Li>Biomedical Data Analysis <Li>Medical Imaging
+    <section id="research">
+        <h2>Research Interests</h2>
+        <Li>Statistical Machine Learning <Li>Applied Statistics <Li>Time Series <Li>Data Mining <Li>Biomedical Data Analysis <Li>Medical Imaging
 
-        <h2>Research Experiences</h2>
-        <ul>
-            <li>
-                <strong>Data Scientist:</strong> Razi Hospital, Department of Dermatology
-                <ul>
+        <h2>Research Experiences</h2>
+        <ul>
+            <li>
+                <strong>Data Scientist:</strong> Razi Hospital, Department of Dermatology
+                <ul>
 
-                    <li>Developed CNN-based models to integrate multimodal data for more accurate melanoma detection.</li>
-                    <li>Obtained and process dermoscopic and pathological datasets.</li>
-                    <li>Applied deep learning techniques to improve malignancy grading and enhance diagnostic precision.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Data Management Researcher: </strong> the Biobank of National Brain Mapping Lab
-                <ul>
+                    <li>Developed CNN-based models to integrate multimodal data for more accurate melanoma detection.</li>
+                    <li>Obtained and process dermoscopic and pathological datasets.</li>
+                    <li>Applied deep learning techniques to improve malignancy grading and enhance diagnostic precision.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Data Management Researcher: </strong> the Biobank of National Brain Mapping Lab
+                <ul>
 
-                    <li>Contributed to building an open data platform for neuroimaging datasets.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+                    <li>Contributed to building an open data platform for neuroimaging datasets.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
 <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-        <li>
-            <strong>Diagnosis and Prognosis of Melanoma from Dermoscopy Images Using Machine Learning and Deep Learning:</strong> A Systematic Literature Review  
-            <br>Published in BMC Cancer Journal. <a href="https://doi.org/10.1186/s12885-024-13423-y" target="_blank">https://doi.org/10.1186/s12885-024-13423-y</a>
-            </li>
-            <li>
-            <strong> Master’s Thesis:</strong> Melanoma Diagnosis and Malignancy Grading from Multimodal Data Using Deep Learning
-        </li>
-    </ul>
+    <h2>Publications</h2>
+    <ul>
+        <li>
+            <strong>Diagnosis and Prognosis of Melanoma from Dermoscopy Images Using Machine Learning and Deep Learning:</strong> A Systematic Literature Review  
+            <br>Published in BMC Cancer Journal. <a href="https://doi.org/10.1186/s12885-024-13423-y" target="_blank">https://doi.org/10.1186/s12885-024-13423-y</a>
+            </li>
+            <li>
+            <strong> Master’s Thesis:</strong> Melanoma Diagnosis and Malignancy Grading from Multimodal Data Using Deep Learning
+        </li>
+    </ul>
 </section>
 
+ <section id="photography">
+        <h2>Photography</h2>
+        <p>Here are some of my favorite photographs:</p>
+        <div class="photo-grid">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645276.jpg" alt="Zoroastrian Fire Temple of Yazd, Yazd">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645252.jpg" alt="Sa'dabad Cultural and Historical Complex, Tehran">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645213.jpg" alt="Sa'dabad Cultural and Historical Complex, Tehran">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645192.jpg" alt="Kharbas Cave, Qeshm">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645170.jpg" alt="Stars Valley, Qeshm">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645142.jpg" alt="Chahkooh Canyon, Qeshm">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645102.jpg" alt="The Valley of the Statues, Hormoz">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645074.jpg" alt="Red Beach, Hormoz">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645048.jpg" alt="Turtles Beach, Hormoz">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297644940.jpg" alt="Carpet Museum of Iran, Tehran">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645001.jpg" alt="Carpet Museum of Iran, Tehran">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297645023.jpg" alt="Carpet Museum of Iran, Tehran">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297644954.jpg" alt="National Museum of Iran, Tehran">
+            <img src="https://raw.githubusercontent.com/hodanaseri/hodanaseri.github.io/refs/heads/main/1742297644970.jpg" alt="National Museum of Iran, Tehran">
+        </div>
+    </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me via:</p>
-    <div style="display: flex; align-items: center; gap: 15px;">
-        <!-- Email -->
-        <a href="mailto:hodaanaserii@gmail.com" target="_blank">
-            <img src="https://img.icons8.com/?size=512&id=3AYCSzCO85Qw&format=png" alt="Email" width="40" height="40">
-        </a>
+    <h2>Contact</h2>
+    <p>You can reach me via:</p>
+    <div style="display: flex; align-items: center; gap: 15px;">
+        <!-- Email -->
+        <a href="mailto:hodaanaserii@gmail.com" target="_blank">
+            <img src="https://img.icons8.com/?size=512&id=3AYCSzCO85Qw&format=png" alt="Email" width="40" height="40">
+        </a>
 
-        <!-- GitHub -->
-        <a href="https://github.com/hodanaseri" target="_blank">
-            <img src="https://img.icons8.com/?size=100&id=106562&format=png&color=000000" alt="GitHub" width="40" height="40">
-        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/hodanaseri" target="_blank">
+            <img src="https://img.icons8.com/?size=100&id=106562&format=png&color=000000" alt="GitHub" width="40" height="40">
+        </a>
 
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/hoda-naseri" target="_blank">
-            <img src="https://e7.pngegg.com/pngimages/535/35/png-clipart-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-thumbnail.png" alt="LinkedIn" width="40" height="40">
-        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/hoda-naseri" target="_blank">
+            <img src="https://e7.pngegg.com/pngimages/535/35/png-clipart-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-thumbnail.png" alt="LinkedIn" width="40" height="40">
+        </a>
 
-        <!-- ORCID -->
-        <a href="https://orcid.org/0009-0005-5739-7066" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1024px-ORCID_iD.svg.png" alt="ORCID" width="40" height="40">
-        </a>
-    </div>
+        <!-- ORCID -->
+        <a href="https://orcid.org/0009-0005-5739-7066" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1024px-ORCID_iD.svg.png" alt="ORCID" width="40" height="40">
+        </a>
+    </div>
 </section>
 
 
-    <footer>
-        <p>&copy; 2025 Hoda Naseri. All rights reserved.</p>
-    </footer>
+    <footer>
+        <p>&copy; 2025 Hoda Naseri. All rights reserved.</p>
+    </footer>
 </body>
 </html>
