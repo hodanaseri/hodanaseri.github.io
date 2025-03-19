@@ -132,6 +132,11 @@ footer a:not(.nav-link) {
   .cover-bg {
     padding: 5rem !important;
     padding-bottom: 10px !important; }
+  .page-content, .cover, .cover-bg {
+    display: block !important;
+    opacity: 1 !important;
+    height: auto !important;
+    visibility: visible !important; }
   .avatar {
     margin-top: -10px; }
   .about-section {
