@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoda Naseri | Data Scientist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1a1a2e;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .nav-container a {
+            color: #eee;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+
+        .nav-container a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 6rem 2rem 2rem 2rem;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #1a1a2e;
+            border-bottom: 3px solid #ff6b6b;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            color: #1a1a2e;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        /* About Me */
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        /* Research Experience */
+        .experience-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .experience-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ff6b6b;
+        }
+
+        .experience-subtitle {
+            font-weight: 500;
+            margin: 0.3rem 0;
+        }
+
+        .experience-date {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Research Interests */
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            list-style: none;
+        }
+
+        .interests-list li {
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+
+        /* Publications */
+        .publication-item {
+            margin-bottom: 1.2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .publication-authors {
+            color: #555;
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+
+        .publication-journal {
+            color: #ff6b6b;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        .publication-link {
+            color: #1a1a2e;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .publication-link:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+
+        /* Button */
+        .btn-cv {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            transition: background 0.3s;
+        }
+
+        .btn-cv:hover {
+            background: #e05555;
+        }
+
+        /* Photography Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-placeholder {
+            background: #f0f0f0;
+            height: 200px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Contact */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+
+        .contact-item:hover {
+            color: #ff6b6b;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #1a1a2e;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.85rem;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: none;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                gap: 0.8rem;
+            }
+            .nav-container a {
+                font-size: 0.8rem;
+            }
+            .container {
+                padding: 5rem 1rem 1rem 1rem;
+            }
+            section {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="#about">About Me</a>
+        <a href="#research-exp">Research Experience</a>
+        <a href="#interests">Research Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+        <a href="#photography">Photography</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/180x180/cccccc/999?text=Your+Photo" alt="Hoda Naseri" class="avatar">
+            <div class="about-text">
+                <p>Hi, I'm Hoda Naseri! I'm a data scientist with a passion for machine learning, applied statistics, and health data science. I hold an M.Sc. in Data Science from Tarbiat Modares University and a B.Sc. in Statistics from Shahid Beheshti University.</p>
+                <p>My research focuses on AI-driven medical diagnostics, with a particular emphasis on melanoma detection using multimodal dermoscopic and pathological data. I collaborate with dermatologists at Razi Hospital (Tehran University of Medical Sciences) and have worked as a research assistant at the National Brain Mapping Lab (NBML).</p>
+                <p>Beyond research, I'm an author passionate about making science accessible to young minds. I write biographical novels about influential scientists for middle school students and have translated <em>Simply Artificial Intelligence</em> into Persian.</p>
+                <p>Outside of work, I enjoy reading, practicing yoga, visiting historical sites, and exploring new ideas that fuel my creativity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Experience Section -->
+    <section id="research-exp">
+        <h2>Research Experience</h2>
+        
+        <div class="experience-item">
+            <div class="experience-title">Data Scientist</div>
+            <div class="experience-subtitle">Razi Hospital, Department of Dermatology — Tehran University of Medical Sciences</div>
+            <div class="experience-date">Aug 2024 – Present</div>
+            <p>Collaborating with dermatologists to analyze and diagnose melanoma from dermoscopy images and skin pathology. Developing deep learning models integrating multimodal data for more accurate melanoma detection and malignancy grading.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-title">Data Scientist / Research Assistant</div>
+            <div class="experience-subtitle">NBML (National Brain Mapping Lab) Biobank — University of Tehran</div>
+            <div class="experience-date">June 2024 – Apr 2025</div>
+            <p>Research assistant in the biobank team to design and establish an open data platform for neuroimaging datasets. Contributed to FAIR data principles implementation.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-title">Peer Reviewer</div>
+            <div class="experience-subtitle">Academic Journals (Medical Imaging & Data Science)</div>
+            <div class="experience-date">2024 – Present</div>
+            <p>Evaluating manuscripts, providing constructive feedback, and supporting editorial processes with focus on methodological soundness and innovation.</p>
+        </div>
+    </section>
+
+    <!-- Research Interests Section -->
+    <section id="interests">
+        <h2>Research Interests</h2>
+        <ul class="interests-list">
+            <li>Statistical Machine Learning</li>
+            <li>Data Mining</li>
+            <li>Applied Statistics</li>
+            <li>Biomedical Data Analysis</li>
+            <li>Medical Imaging</li>
+            <li>Time Series Analysis</li>
+            <li>Spatial Statistics</li>
+            <li>Deep Learning</li>
+        </ul>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="publication-item">
+            <div class="publication-title">Diagnosis and Prognosis of Melanoma from Dermoscopy Images using Machine Learning and Deep Learning: A Systematic Literature Review</div>
+            <div class="publication-authors">H. Naseri, A.A. Safaei</div>
+            <div class="publication-journal">BMC Cancer, Jan 2025</div>
+            <a href="https://doi.org/10.1186/s12885-024-13423-y" class="publication-link" target="_blank">Read paper →</a>
+        </div>
+
+        <div class="publication-item">
+            <div class="publication-title">FAIR m-BIDS: Advancing Brain Data Utilization through Multimodal and FAIR Principles</div>
+            <div class="publication-authors">S.M. Mirhosseini, H. Naseri, et al.</div>
+            <div class="publication-journal">Scientific Data, Feb 2026</div>
+            <a href="#" class="publication-link" target="_blank">Read paper →</a>
+        </div>
+
+        <div class="publication-item">
+            <div class="publication-title">Endometrial Cancer Diagnosis and Staging from Pathology Images based on Explainable Deep Learning Models: A Systematic Literature Review</div>
+            <div class="publication-authors">S.M. Mirhosseini, H. Naseri, et al.</div>
+            <div class="publication-journal">Under Review, 2024–2025</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="publication-title">Melanoma Diagnosis and Malignancy Grading from Multimodal Dermoscopic and Pathological Data using Deep Learning Methods</div>
+            <div class="publication-authors">H. Naseri (Master's Thesis)</div>
+            <div class="publication-journal">Tarbiat Modares University, 2024–2025</div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv">
+        <h2>CV</h2>
+        <p>You can download my full CV below. It includes detailed information about my education, research experience, publications, awards, certifications, and computational skills.</p>
+        <a href="#" class="btn-cv">Download CV (PDF)</a>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography">
+        <h2>Photography</h2>
+        <p>A collection of moments from my travels and daily life — historical sites, cultural places, and nature.</p>
+        <div class="gallery">
+            <div class="gallery-placeholder">📸 Photo 1</div>
+            <div class="gallery-placeholder">📸 Photo 2</div>
+            <div class="gallery-placeholder">📸 Photo 3</div>
+            <div class="gallery-placeholder">📸 Photo 4</div>
+            <div class="gallery-placeholder">📸 Photo 5</div>
+            <div class="gallery-placeholder">📸 Photo 6</div>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #777;">*Replace placeholders with your own images for a personal gallery.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <a href="mailto:hodaanaserii@gmail.com" class="contact-item">📧 hodaanaserii@gmail.com</a>
+            <span class="contact-item">📍 Tehran, Iran</span>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/hodanaseri" target="_blank">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/hoda-naseri" target="_blank">🔗 LinkedIn</a>
+            <a href="https://www.researchgate.net/profile/Hoda-Naseri" target="_blank">📚 ResearchGate</a>
+            <a href="https://scholar.google.com/citations?user=ZgAsfSQAAAAJ&hl=en" target="_blank">🎓 Google Scholar</a>
+        </div>
+        <hr>
+        <p style="font-size: 0.9rem;">Feel free to reach out for collaborations, questions, or just to connect!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hoda Naseri. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
