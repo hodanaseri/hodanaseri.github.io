@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoda Naseri</title>
+    <title>Hoda Naseri | Data Scientist</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -245,14 +247,24 @@
 
         .social-links {
             display: flex;
-            gap: 1rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
             margin-top: 1rem;
         }
 
         .social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             color: #1a1a2e;
-            font-size: 1.5rem;
+            text-decoration: none;
+            font-size: 1rem;
             transition: color 0.3s;
+            padding: 0.5rem 0;
+        }
+
+        .social-links a i {
+            font-size: 1.3rem;
         }
 
         .social-links a:hover {
@@ -289,6 +301,12 @@
             h2 {
                 font-size: 1.5rem;
             }
+            .social-links {
+                gap: 1rem;
+            }
+            .social-links a {
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
@@ -314,10 +332,10 @@
         <div class="about-content">
             <img src="https://via.placeholder.com/180x180/cccccc/999?text=Your+Photo" alt="Hoda Naseri" class="avatar">
             <div class="about-text">
-                <p>Hi, I’m Hoda! I’m a data scientist with a passion for machine learning, applied statistics, and health data science. I hold an M.Sc. in Data Science and a B.Sc. in Statistics. My research focuses on AI-driven medical diagnostics, with a particular emphasis on melanoma detection.</p>
-                <p>Beyond my academic work, I’m an author passionate about making science accessible to young minds. Through engaging biographical novels, I bring the stories of influential scientists to middle school students, inspiring the next generation with the achievements of those who have shaped the world of science.</p> 
+                <p>Hi, I'm Hoda! I'm a data scientist with a passion for machine learning, applied statistics, and health data science. I hold an M.Sc. in Data Science and a B.Sc. in Statistics. My research focuses on AI-driven medical diagnostics, with a particular emphasis on melanoma detection.</p>
+                <p>Beyond my academic work, I'm an author passionate about making science accessible to young minds. Through engaging biographical novels, I bring the stories of influential scientists to middle school students, inspiring the next generation with the achievements of those who have shaped the world of science.</p> 
                 <p>Outside of research and writing, I enjoy reading, practicing yoga, and exploring new ideas that fuel my creativity. I also love visiting historical and cultural sites, immersing myself in their stories and significance.</p>
-</p>            </div>
+            </div>
         </div>
     </section>
 
@@ -420,13 +438,13 @@
         <h2>Contact</h2>
         <div class="contact-info">
             <a href="mailto:hodaanaserii@gmail.com" class="contact-item">📧 hodaanaserii@gmail.com</a>
-            <span class="contact-item">Tehran, Iran</span>
+            <span class="contact-item">📍 Tehran, Iran</span>
         </div>
         <div class="social-links">
-            <a href="https://github.com/hodanaseri" target="_blank" class="text-dark me-2"><i class="fab fa-github fa-lg"></i></a>
-            <a href="https://www.linkedin.com/in/hoda-naseri" target="_blank" class="text-dark me-2"><i class="fab fa-linkedin fa-lg"></i></a>
-            <a href="https://www.researchgate.net/profile/Hoda-Naseri" target="_blank" class="text-dark me-2"><i class="fab fa-researchgate fa-lg"></i></a>
-            <a href="https://scholar.google.com/citations?user=ZgAsfSQAAAAJ&hl=en" target="_blank" class="text-dark me-2"><i class="fas fa-graduation-cap fa-lg"></i></a>
+            <a href="https://github.com/hodanaseri" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/hoda-naseri" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.researchgate.net/profile/Hoda-Naseri" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
+            <a href="https://scholar.google.com/citations?user=ZgAsfSQAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
         </div>
         <hr>
         <p style="font-size: 0.9rem;">Feel free to reach out for collaborations, questions, or just to connect!</p>
