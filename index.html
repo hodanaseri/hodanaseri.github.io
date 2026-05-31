@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoda Naseri | Data Scientist</title>
-    <!-- Font Awesome for icons -->
+    <title>Hoda Naseri</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
@@ -20,7 +19,6 @@
             background-color: #f5f5f5;
         }
 
-        /* Navigation */
         nav {
             background-color: #1a1a2e;
             position: fixed;
@@ -47,20 +45,19 @@
             font-weight: 500;
             padding: 0.5rem 0;
             transition: color 0.3s;
+            cursor: pointer;
         }
 
         .nav-container a:hover {
             color: #ff6b6b;
         }
 
-        /* Main Content */
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 6rem 2rem 2rem 2rem;
         }
 
-        /* Sections */
         section {
             background: white;
             border-radius: 16px;
@@ -78,12 +75,6 @@
             margin-bottom: 1.5rem;
         }
 
-        h3 {
-            color: #1a1a2e;
-            margin: 1rem 0 0.5rem 0;
-        }
-
-        /* About Me */
         .about-content {
             display: flex;
             gap: 2rem;
@@ -102,7 +93,6 @@
             flex: 1;
         }
 
-        /* Research Experience */
         .experience-item {
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
@@ -126,7 +116,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Research Interests */
         .interests-list {
             display: flex;
             flex-wrap: wrap;
@@ -141,7 +130,6 @@
             font-size: 0.9rem;
         }
 
-        /* Publications */
         .publication-item {
             margin-bottom: 1.2rem;
             padding-bottom: 1rem;
@@ -176,7 +164,6 @@
             text-decoration: underline;
         }
 
-        /* Button */
         .btn-cv {
             display: inline-block;
             background: #ff6b6b;
@@ -193,39 +180,69 @@
             background: #e05555;
         }
 
-        /* Photography Gallery */
+        /* Photography Gallery - HIDDEN by default */
+        #photography {
+            display: none;
+        }
+
+        #photography:target {
+            display: block;
+        }
+
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.2rem;
             margin-top: 1rem;
         }
 
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        .gallery-item {
+            background: #f9f9f9;
             border-radius: 12px;
-            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s;
         }
 
-        .gallery img:hover {
-            transform: scale(1.02);
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
         }
 
         .gallery-placeholder {
-            background: #f0f0f0;
-            height: 200px;
-            border-radius: 12px;
+            background: #e8e8e8;
+            height: 180px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #999;
-            font-size: 0.9rem;
+            font-size: 2rem;
         }
 
-        /* Contact */
+        .gallery-caption {
+            padding: 0.6rem;
+            font-size: 0.8rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .close-photography {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #ff6b6b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .close-photography:hover {
+            text-decoration: underline;
+        }
+
         .contact-info {
             display: flex;
             flex-wrap: wrap;
@@ -271,7 +288,6 @@
             color: #ff6b6b;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -301,12 +317,6 @@
             h2 {
                 font-size: 1.5rem;
             }
-            .social-links {
-                gap: 1rem;
-            }
-            .social-links a {
-                font-size: 0.85rem;
-            }
         }
     </style>
 </head>
@@ -319,14 +329,13 @@
         <a href="#interests">Research Interests</a>
         <a href="#publications">Publications</a>
         <a href="#cv">CV</a>
-        <a href="#photography">Photography</a>
         <a href="#contact">Contact</a>
+        <a href="#photography">Photography</a>
     </div>
 </nav>
 
 <div class="container">
 
-    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
@@ -339,24 +348,20 @@
         </div>
     </section>
 
-    <!-- Research Experience Section -->
     <section id="research-exp">
         <h2>Research Experience</h2>
-        
         <div class="experience-item">
             <div class="experience-title">Data Scientist</div>
             <div class="experience-subtitle">Razi Hospital, Department of Dermatology — Tehran University of Medical Sciences</div>
             <div class="experience-date">Aug 2024 – Present</div>
             <p>Collaborating with dermatologists to analyze and diagnose melanoma from dermoscopy images and skin pathology. Developing deep learning models integrating multimodal data for more accurate melanoma detection and malignancy grading.</p>
         </div>
-
         <div class="experience-item">
             <div class="experience-title">Data Scientist / Research Assistant</div>
             <div class="experience-subtitle">NBML (National Brain Mapping Lab) Biobank — University of Tehran</div>
             <div class="experience-date">June 2024 – Apr 2025</div>
             <p>Research assistant in the biobank team to design and establish an open data platform for neuroimaging datasets. Contributed to FAIR data principles implementation.</p>
         </div>
-
         <div class="experience-item">
             <div class="experience-title">Peer Reviewer</div>
             <div class="experience-subtitle">Academic Journals (Medical Imaging & Data Science)</div>
@@ -365,7 +370,6 @@
         </div>
     </section>
 
-    <!-- Research Interests Section -->
     <section id="interests">
         <h2>Research Interests</h2>
         <ul class="interests-list">
@@ -380,30 +384,25 @@
         </ul>
     </section>
 
-    <!-- Publications Section -->
     <section id="publications">
         <h2>Publications</h2>
-
         <div class="publication-item">
             <div class="publication-title">Diagnosis and Prognosis of Melanoma from Dermoscopy Images using Machine Learning and Deep Learning: A Systematic Literature Review</div>
             <div class="publication-authors">H. Naseri, A.A. Safaei</div>
             <div class="publication-journal">BMC Cancer, Jan 2025</div>
             <a href="https://doi.org/10.1186/s12885-024-13423-y" class="publication-link" target="_blank">Read paper →</a>
         </div>
-
         <div class="publication-item">
             <div class="publication-title">FAIR m-BIDS: Advancing Brain Data Utilization through Multimodal and FAIR Principles</div>
             <div class="publication-authors">S.M. Mirhosseini, H. Naseri, et al.</div>
             <div class="publication-journal">Scientific Data, Feb 2026</div>
             <a href="#" class="publication-link" target="_blank">Read paper →</a>
         </div>
-
         <div class="publication-item">
             <div class="publication-title">Endometrial Cancer Diagnosis and Staging from Pathology Images based on Explainable Deep Learning Models: A Systematic Literature Review</div>
             <div class="publication-authors">S.M. Mirhosseini, H. Naseri, et al.</div>
             <div class="publication-journal">Under Review, 2024–2025</div>
         </div>
-
         <div class="publication-item">
             <div class="publication-title">Melanoma Diagnosis and Malignancy Grading from Multimodal Dermoscopic and Pathological Data using Deep Learning Methods</div>
             <div class="publication-authors">H. Naseri (Master's Thesis)</div>
@@ -411,29 +410,12 @@
         </div>
     </section>
 
-    <!-- CV Section -->
     <section id="cv">
         <h2>CV</h2>
         <p>*last updated: May 2026</p>
         <a href="#" class="btn-cv">Download CV (PDF)</a>
     </section>
 
-    <!-- Photography Section -->
-    <section id="photography">
-        <h2>Photography</h2>
-        <p>A collection of moments from my travels and daily life — historical sites, cultural places, and nature.</p>
-        <div class="gallery">
-            <div class="gallery-placeholder">📸 Photo 1</div>
-            <div class="gallery-placeholder">📸 Photo 2</div>
-            <div class="gallery-placeholder">📸 Photo 3</div>
-            <div class="gallery-placeholder">📸 Photo 4</div>
-            <div class="gallery-placeholder">📸 Photo 5</div>
-            <div class="gallery-placeholder">📸 Photo 6</div>
-        </div>
-        <p style="margin-top: 1rem; font-size: 0.85rem; color: #777;">*Replace placeholders with your own images for a personal gallery.</p>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
         <div class="contact-info">
@@ -449,10 +431,43 @@
         <p style="font-size: 0.9rem;">Feel free to reach out for collaborations, questions, or just to connect!</p>
     </section>
 
+    <!-- Photography Section - HIDDEN until you click Photography link -->
+    <section id="photography">
+        <h2>Photography</h2>
+        <p>A collection of moments from my travels and daily life — historical sites, cultural places, and nature.</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📸</div>
+                <div class="gallery-caption">Historical site in Tehran</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📸</div>
+                <div class="gallery-caption">Nature view</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📸</div>
+                <div class="gallery-caption">Cultural place</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📸</div>
+                <div class="gallery-caption">Travel moment</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📸</div>
+                <div class="gallery-caption">City architecture</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📸</div>
+                <div class="gallery-caption">Sunset</div>
+            </div>
+        </div>
+        <a href="#" class="close-photography" onclick="window.location.href='#contact'; return false;">← Close Gallery</a>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #777;">*Replace placeholders with your own images.</p>
+    </section>
+
     <footer>
         <p>&copy; 2026 Hoda Naseri. All rights reserved.</p>
     </footer>
-
 </div>
 
 </body>
