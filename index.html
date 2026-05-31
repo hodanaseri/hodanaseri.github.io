@@ -212,6 +212,21 @@
             border-radius: 8px;
             cursor: pointer;
             transition: transform 0.3s;
+            display: block;
+        }
+
+        /* For vertical/tall images, limit the height */
+        .gallery-item img[style*="height"] {
+            max-height: 300px;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        /* Auto-detect vertical images using JavaScript will handle this */
+        .gallery-item.vertical img {
+            max-height: 280px;
+            width: auto;
+            margin: 0 auto;
         }
 
         .gallery-item img:hover {
@@ -335,6 +350,9 @@
             }
             h2 {
                 font-size: 1.5rem;
+            }
+            .gallery-item.vertical img {
+                max-height: 200px;
             }
         }
     </style>
@@ -602,6 +620,26 @@
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && lightbox.classList.contains('active')) {
             closeLightbox();
+        }
+    });
+
+    // Detect vertical images and add a class to make them smaller
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+        img.addEventListener('load', function() {
+            const height = this.naturalHeight;
+            const width = this.naturalWidth;
+            if (height > width) {
+                // This is a vertical/portrait image
+                this.closest('.gallery-item').classList.add('vertical');
+            }
+        });
+        // If image already loaded
+        if (img.complete) {
+            const height = img.naturalHeight;
+            const width = img.naturalWidth;
+            if (height > width) {
+                img.closest('.gallery-item').classList.add('vertical');
+            }
         }
     });
 </script>
